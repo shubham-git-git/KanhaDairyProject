@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KanhaDairyApp", "KanhaDairyApp\KanhaDairyApp.csproj", "{A971E425-1732-4CA2-9727-E967DC30BCA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KanhaDairyAPI", "KanhaDairyAPI\KanhaDairyAPI.csproj", "{F93AA147-52CC-41D3-A931-EF0E95652061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanhaDairy.DAL", "KanhaDairy.DAL\KanhaDairy.DAL.csproj", "{38BCE85F-2D8C-40BA-961D-9766C42EFCA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanhaDairy.BAL", "KanhaDairy.BAL\KanhaDairy.BAL.csproj", "{E87E6B70-3829-4E50-A381-87CDB1DFE136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanhaDairy.MODEL", "KanhaDairy.MODEL\KanhaDairy.MODEL.csproj", "{3CD07940-4058-44BC-B4C6-7C123062F6F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanhaDairy.UTILITY", "KanhaDairy.UTILITY\KanhaDairy.UTILITY.csproj", "{FFCFD601-426E-4A4C-B7CA-96A2DCCFEA8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A971E425-1732-4CA2-9727-E967DC30BCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A971E425-1732-4CA2-9727-E967DC30BCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A971E425-1732-4CA2-9727-E967DC30BCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A971E425-1732-4CA2-9727-E967DC30BCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93AA147-52CC-41D3-A931-EF0E95652061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93AA147-52CC-41D3-A931-EF0E95652061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93AA147-52CC-41D3-A931-EF0E95652061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93AA147-52CC-41D3-A931-EF0E95652061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BCE85F-2D8C-40BA-961D-9766C42EFCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BCE85F-2D8C-40BA-961D-9766C42EFCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BCE85F-2D8C-40BA-961D-9766C42EFCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BCE85F-2D8C-40BA-961D-9766C42EFCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87E6B70-3829-4E50-A381-87CDB1DFE136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87E6B70-3829-4E50-A381-87CDB1DFE136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87E6B70-3829-4E50-A381-87CDB1DFE136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87E6B70-3829-4E50-A381-87CDB1DFE136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD07940-4058-44BC-B4C6-7C123062F6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD07940-4058-44BC-B4C6-7C123062F6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD07940-4058-44BC-B4C6-7C123062F6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD07940-4058-44BC-B4C6-7C123062F6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCFD601-426E-4A4C-B7CA-96A2DCCFEA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCFD601-426E-4A4C-B7CA-96A2DCCFEA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCFD601-426E-4A4C-B7CA-96A2DCCFEA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCFD601-426E-4A4C-B7CA-96A2DCCFEA8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98E1C910-B041-431E-88EA-7165741F4058}
+	EndGlobalSection
+EndGlobal

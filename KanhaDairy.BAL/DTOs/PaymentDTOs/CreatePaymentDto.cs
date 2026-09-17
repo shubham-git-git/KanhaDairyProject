@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KanhaDairy.BAL.DTOs.PaymentDTOs
+{
+    public class CreatePaymentDto
+    {
+        public int PaymentId { get; set; }
+        public int FkOrderId { get; set; }
+        public int FkUserId { get; set; }
+        public int FkPaymentModeId { get; set; }
+        public string TransactionId { get; set; } = null!;
+    }
+}

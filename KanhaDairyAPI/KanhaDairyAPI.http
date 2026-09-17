@@ -1,0 +1,6 @@
+@KanhaDairyAPI_HostAddress = http://localhost:5115
+
+GET {{KanhaDairyAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
