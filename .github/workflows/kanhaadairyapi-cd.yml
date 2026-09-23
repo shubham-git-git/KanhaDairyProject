@@ -4,32 +4,50 @@ on:
   push:
     branches: [ "master" ]
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
+
     runs-on: ubuntu-latest
 
     steps:
 
+    # 1. Checkout source code
     - name: Checkout code
       uses: actions/checkout@v4
 
+    # 2. Install .NET 8
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
 
+    # 3. Restore NuGet packages
     - name: Restore dependencies
       run: dotnet restore
 
+    # 4. Build project
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
-    - name: Publish
-      run: dotnet publish --configuration Release --output ./publish
+    # 5. Publish API
+    - name: Publish API
+      run: dotnet publish YOUR_API_PROJECT.csproj --configuration Release --output ./publish --no-restore
 
+    # 6. Login to Azure using OIDC
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+    # 7. Deploy to Azure App Service
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
         app-name: kanhadairyapi
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ./publish
