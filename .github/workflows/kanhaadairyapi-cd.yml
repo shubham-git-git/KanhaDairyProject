@@ -35,7 +35,7 @@ jobs:
 
     # 5. Publish API
     - name: Publish API
-      run: dotnet publish YOUR_API_PROJECT.csproj --configuration Release --output ./publish --no-restore
+      run: dotnet publish KanhaDairy.API/KanhaDairy.API.csproj --configuration Release --output ./publish --no-restore
 
     # 6. Login to Azure using OIDC
     - name: Azure Login
